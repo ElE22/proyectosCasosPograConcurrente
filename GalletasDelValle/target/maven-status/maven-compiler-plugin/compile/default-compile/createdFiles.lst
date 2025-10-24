@@ -1,0 +1,9 @@
+model\ControlCalidad.class
+controller\GestorProduccion.class
+model\GalletaChocolate.class
+main\App.class
+model\GalletaAvena.class
+model\GalletaIntegral.class
+view\MainView.class
+model\LoteProduccion.class
+model\GalletaSinAzucar.class
