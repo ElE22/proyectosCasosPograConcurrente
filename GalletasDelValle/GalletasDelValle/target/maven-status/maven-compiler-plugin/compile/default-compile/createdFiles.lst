@@ -1,5 +1,5 @@
 com\mycompany\model\GalletaAvena.class
+com\mycompany\model\LoteProduccion.class
 com\mycompany\galletasdelvalle\GalletasDelValle.class
 com\mycompany\controller\GestorProduccion.class
 com\mycompany\model\ControlCalidad.class
-com\mycompany\model\LoteProduccion.class

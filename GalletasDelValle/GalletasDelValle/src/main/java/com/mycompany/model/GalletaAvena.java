@@ -13,8 +13,8 @@ import java.time.LocalDate;
  */
 
 public class GalletaAvena extends LoteProduccion implements ControlCalidad {
-    public GalletaAvena(String idLote, LocalDate fechaFabricacion, int unidades, double tiempoFabricacion) {
-        super(idLote, "Avena", fechaFabricacion, unidades, tiempoFabricacion);
+    public GalletaAvena(String idLote, int limiteUnidades) {
+        super(idLote, "Avena", limiteUnidades);
         setCostoTotal(calcularCostoProduccion());
     }
 
