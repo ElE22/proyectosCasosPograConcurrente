@@ -6,6 +6,11 @@ import java.time.LocalDate;
 import java.io.*;
 import java.util.*;
 import javax.swing.*;
+/**
+ *
+ * @author diana
+ */
+
 
 public class GestorProduccion {
     private ArrayList<LoteProduccion> lotes = new ArrayList<>();
@@ -113,8 +118,7 @@ public class GestorProduccion {
         try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(ruta))) {
             out.writeObject(lotes);
         } catch (IOException e) {
-            JOptionPane.showMessageDialog(null, "Error al guardar los datos: " + e.getMessage(),
-                    "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Error al guardar los datos: " + e.getMessage(),"Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
@@ -132,6 +136,7 @@ public class GestorProduccion {
             }
         } catch (Exception e) {
             this.lotes = new ArrayList<>();
+            JOptionPane.showMessageDialog(null, "Error al cargar los datos: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 

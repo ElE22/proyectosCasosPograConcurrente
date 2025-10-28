@@ -1,11 +1,5 @@
 package com.mycompany.galletasdelvalle;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
-
-
 import com.mycompany.controller.GestorProduccion;
 import com.mycompany.model.GalletaAvena;
 import com.mycompany.model.LoteProduccion;

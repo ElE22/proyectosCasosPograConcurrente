@@ -4,6 +4,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+/**
+ *
+ * @author diana
+ */
+
 public class MainMenuView extends JFrame {
 
     private JButton btnAgregarLote;
