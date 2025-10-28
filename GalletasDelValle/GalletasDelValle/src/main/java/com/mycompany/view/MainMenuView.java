@@ -57,7 +57,7 @@ public class MainMenuView extends JFrame {
 
         // ---------- EVENTOS ----------
         btnSalir.addActionListener(e -> salirDelSistema());
-        btnAgregarLote.addActionListener(e -> mostrarMensaje("Abrir formulario para agregar Lote"));
+        btnAgregarLote.addActionListener(e -> AppNavigator.mostrar(new AgregarLoteView(gestor)));
         btnAgregarPersona.addActionListener(e -> mostrarMensaje("Abrir formulario para registrar responsable"));
         btnVerLotes.addActionListener(e -> mostrarMensaje("Mostrar lista de lotes registrados"));
         btnControlCalidad.addActionListener(e -> mostrarMensaje("Abrir módulo de control de calidad"));

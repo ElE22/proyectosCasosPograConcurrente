@@ -1,8 +1,7 @@
 package com.mycompany.galletasdelvalle;
-
+import com.mycompany.controller.AppNavigator;
 import com.mycompany.controller.GestorProduccion;
 import com.mycompany.model.GalletaAvena;
-import com.mycompany.model.LoteProduccion;
 import com.mycompany.view.MainMenuView;
 import javax.swing.SwingUtilities;
 
@@ -12,7 +11,7 @@ import javax.swing.SwingUtilities;
  */
 public class GalletasDelValle {
 
-   public static void main(String[] args){
+//   public static void main(String[] args){
 //       String ruta = "lotes.dat";
 //        GestorProduccion gestor = new GestorProduccion();
 //
@@ -27,8 +26,19 @@ public class GalletasDelValle {
 ////        gestor.agregarLote(lote2);
 //        System.out.printf("Lectura de los datos desde el archivo:"+ gestor.getLotes());
 
-         SwingUtilities.invokeLater(() -> new MainMenuView().setVisible(true));
+       //  SwingUtilities.invokeLater(() -> new MainMenuView().setVisible(true));
 
        
+   // }
+
+   public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            // Crear una sola instancia del gestor y pasarla a las vistas
+            GestorProduccion gestor = new GestorProduccion();
+
+            // Mostrar la ventana principal usando AppNavigator
+            AppNavigator.mostrar(new MainMenuView(gestor));
+        });
     }
 }
+
